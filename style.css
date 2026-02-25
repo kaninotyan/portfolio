@@ -1,0 +1,43 @@
+/* /////TYpographie/////// */
+
+/* Font Family:):):):):):):):) */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+body{
+	background-color:#46d00f ;	
+	font-family: "DM Sans", sans-serif;
+	}
+
+
+/* Font Size:):):):):):):):) */
+
+:root{
+	--size-S: 10px;
+	--size-M: 16px;
+	--size-L: 20px;
+	--size-XL: 32px;
+	--size-XXL: 52px;
+}
+
+p{ font-size: var(--size-M);}
+h1{ font-size: var(--size-XXL);}
+
+/* Font Weight:):):):):):):):) */
+
+.
+:root{
+	--weight-light: 275;
+	--weight-regular: 382;
+	--weight-bold: 700;
+}
+
+h1 { font-weight: var(--weight-bold);}
+
+/* Couleur:):):):):):):):) */
+
+:root{
+--Couleur-Principale: #ea2ea9
+}
+h1{ color: var(--Couleur-Principale);}
