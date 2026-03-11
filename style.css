@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 /* /////TYpographie/////// */
 
 /* Font Family:):):):):):):):) */
@@ -33,11 +35,21 @@ h1{ font-size: var(--size-XXL);}
 	--weight-bold: 700;
 }
 
-h1 { font-weight: var(--weight-bold);}
+body, p { font-weight: var(--weight-regular);}
+
+b, strong, h6, h5, h4, h3, h2 { font-family: var(--weight-bold);}
+
+h1 { font-weight: var(--weight-light);}
 
 /* Couleur:):):):):):):):) */
 
 :root{
---Couleur-Principale: #ea2ea9
+--Couleur-Principale: #EA2ea9
 }
 h1{ color: var(--Couleur-Principale);}
+
+
+
+
+
+section{ min-height: 100vh;}
