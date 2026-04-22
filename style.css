@@ -8,7 +8,7 @@
 
 
 body{
-	background-color:#46d00f ;	
+	background-color: pink ;	
 	font-family: "DM Sans", sans-serif;
 	}
 
@@ -28,7 +28,7 @@ h1{ font-size: var(--size-XXL);}
 
 /* Font Weight:):):):):):):):) */
 
-.
+
 :root{
 	--weight-light: 275;
 	--weight-regular: 382;
@@ -52,4 +52,43 @@ h1{ color: var(--Couleur-Principale);}
 
 
 
+/* mise en page */
+
 section{ min-height: 100vh;}
+section{
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+section > h2{flex: 0 0 100%;}
+section > a {flex: 0 0 256px;}
+
+section a .vignette{
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+
+/* .vignetee{ max-width: 250px;} */
+
+
+/* UI */
+html, body{
+	scroll-behavior: smooth;
+}
+
+nav{
+	position: sticky;
+	top: 0;
+	background: #EA2ea9;
+	padding: 0.5rem;
+}
+
+h2{
+	position: sticky;
+	top: 2rem;
+	background: #EA2ea9;
+	padding: 0,5rem;
+}
