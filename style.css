@@ -8,7 +8,7 @@
 
 
 body{
-	background-color: pink ;	
+	background-color: white ;	
 	font-family: "DM Sans", sans-serif;
 	}
 
@@ -64,10 +64,10 @@ section{
 section > h2{flex: 0 0 100%;}
 section > a {flex: 0 0 256px;}
 
-section a .vignette{
+section a.vignette img {
 	aspect-ratio: 1/1;
 	object-fit: cover;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 }
 
 
@@ -90,5 +90,5 @@ h2{
 	position: sticky;
 	top: 2rem;
 	background: #EA2ea9;
-	padding: 0,5rem;
+	padding: 0.5rem;
 }
