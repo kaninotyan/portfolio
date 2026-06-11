@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kikimora</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nastuha-Designer</title>
 
-<style>body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-color: rgb(244, 4, 4);
-
-background: linear-gradient(yellow,pink);
-}
-    
-
-    
-    </style>
-
-
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="lightbox/dist/css/lightbox.css">
 </head>
+
 <body>
-    <h1>hello?</h1>
+
+	<header>
+
+		<div class="row" id="Intro">
+			<div class="col">
+			<h1>Anastasiia Kanino</h1>
+			</div>
+				<div class="col">
+				<p>Graphic Designer and art creator</p>
+
+				</p>
+			</div>
+		</div>
+
+	</header>
+
+	<div class="row">
+	<nav>
+		<a href="#Graphisme"> Graphisme</a>
+		<a href="#Photo"> Photo</a>
+		<a href="#Illustration"> Illustration</a>
+	</nav>
+	</div>
+
+	<section id="Graphisme">
+		<h2>Graphisme</h2>
+		<a class="vignette" href="images/HUYNYA_Big.jpg" data-lightbox="Graphisme"> <img src="images/HUYNYA_small.jpg"></a>
+		<a class="vignette" href="images/tk1_big.jpg" data-lightbox="Graphisme"> <img src="images/tk1_web.jpg"></a>
+		<a class="vignette" href="images/Swiss_big.jpg" data-lightbox="Graphisme"> <img src="images/Swiss_small.jpg"></a>
+		<a class="vignette" href="images/VIVO.jpg" data-lightbox="Graphisme"> <img src="images/VIVO_big.jpg"></a>
+		<a class="vignette" href="images/AGENDA-1_big.jpg" data-lightbox="Graphisme"> <img src="images/AGENDA-1_small.jpg"></a>
+		<a class="vignette" href="images/fishnchips.jpg" data-lightbox="Graphisme"> <img src="images/fishnchips_web.jpg"></a>
+	</section>
+	
+
+	
+	<section id="Photo">
+		<h2>Photo</h2>
+		<a class="vignette" href="images/2025_COMPOSITION_Anastasiia_03-copy_big.jpg" data-lightbox="Graphisme"> <img src="images/2025_COMPOSITION_Anastasiia_03-copy_web.jpg"></a>
+		<a class="vignette" href="images/crazycam.jpg" data-lightbox="Graphisme"> <img src="images/crazycam_web.jpg"></a>
+		<a class="vignette" href="images/vegies_big.jpg" data-lightbox="Graphisme"> <img src="images/vegies_small.jpg"></a>
+		<a class="vignette" href="images/camera_big.jpg" data-lightbox="Graphisme"> <img src="images/camera_small.jpg"></a>
+	</section>
+
+
+	<section id="Illustration">
+		<h2>Illustration</h2>
+	<a class="vignette" href="images/Tickets.jpg" data-lightbox="Graphisme"> <img src="images/Tickets_small.jpg"></a>
+	<a class="vignette" href="images/game-05.jpg" data-lightbox="Graphisme"> <img src="images/game_web.jpg"></a>
+	<a class="vignette" href="images/Tulipe_finale.jpg" data-lightbox="Graphisme"> <img src="images/Tulipe_finale_small.jpg"></a>
+	
+
+	
+	</section>
+
+
+
+
+	<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script> 
+	<script>
+		lightbox.option({
+		'resizeDuration': 50,
+		'fadeDuration': 50,
+		'imageFadeDuration': 0,
+		'showImageNumberLabel': false,
+		'wrapAround': true
+		})
+	</script>
+	<!-- <style>
+		:root{
+		--lb-image-border-width: 1px;
+		--lb-border-radius: 0;
+	}
+	</style> -->
+
 </body>
 </html>

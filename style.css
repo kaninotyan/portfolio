@@ -1,0 +1,113 @@
+@import url(reset.css);
+
+/* /////TYpographie/////// */
+
+/* Font Family:):):):):):):):) */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+body{
+	background-color: white ;	
+	font-family: "DM Sans", sans-serif;
+	}
+
+
+/* Font Size:):):):):):):):) */
+p{text-align:right;
+margin: 2rem;}
+:root{
+	--size-S: 10px;
+	--size-M: 16px;
+	--size-L: 20px;
+	--size-XL: 32px;
+	--size-XXL: 52px;
+}
+
+p{ font-size: var(--size-M);}
+h1{ font-size: var(--size-XXL);}
+
+/* DECO//////// */
+	a{
+ /* text-decoration: none; */
+ color: white;
+ text-underline-offset: 0.3rem;
+ text-decoration-thickness: 1px;
+ text-decoration-style: dotted;
+	}
+
+/* Font Weight:):):):):):):):) */
+
+
+:root{
+	--weight-light: 275;
+	--weight-regular: 382;
+	--weight-bold: 700;
+}
+
+body, p { font-weight: var(--weight-regular);}
+
+b, strong, h6, h5, h4, h3, h2 { font-family: var(--weight-bold);}
+
+h1 { font-weight: var(--weight-light);}
+
+/* Couleur:):):):):):):):) */
+
+:root{
+--Couleur-Principale: #EA2ea9
+}
+h1{ color: var(--Couleur-Principale);}
+
+
+section {
+ border-top: 2px solid var(--Couleur-Principale);
+}
+
+
+/* mise en page */
+
+section{ min-height: 10vh;}
+
+:root { --spacer: 2rem;}
+
+.row { display: flex; gap: var(--spacer);}
+.row > * { flex: 1; }
+
+section{
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+section > h2{flex: 0 0 100%;}
+section > a {flex: 0 0 256px;}
+
+section a.vignette img {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	/* border-radius: 50%; */
+}
+
+
+/* .vignetee{ max-width: 250px;} */
+
+
+/* UI */
+html, body{
+	scroll-behavior: smooth;
+}
+
+nav{
+	position: sticky;
+	top: 0;
+	background: #EA2ea9;
+	padding: 0.5rem;
+	z-index: 99;
+}
+
+h2{
+	position: sticky;
+	top: 0;
+	background: #EA2ea9;
+	padding: 0.5rem;
+}
