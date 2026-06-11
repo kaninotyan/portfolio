@@ -14,7 +14,8 @@ body{
 
 
 /* Font Size:):):):):):):):) */
-
+p{text-align:right;
+margin: 2rem;}
 :root{
 	--size-S: 10px;
 	--size-M: 16px;
@@ -25,6 +26,15 @@ body{
 
 p{ font-size: var(--size-M);}
 h1{ font-size: var(--size-XXL);}
+
+/* DECO//////// */
+	a{
+ /* text-decoration: none; */
+ color: white;
+ text-underline-offset: 0.3rem;
+ text-decoration-thickness: 1px;
+ text-decoration-style: dotted;
+	}
 
 /* Font Weight:):):):):):):):) */
 
@@ -49,12 +59,20 @@ h1 { font-weight: var(--weight-light);}
 h1{ color: var(--Couleur-Principale);}
 
 
-
+section {
+ border-top: 2px solid var(--Couleur-Principale);
+}
 
 
 /* mise en page */
 
-section{ min-height: 100vh;}
+section{ min-height: 10vh;}
+
+:root { --spacer: 2rem;}
+
+.row { display: flex; gap: var(--spacer);}
+.row > * { flex: 1; }
+
 section{
 	display: flex;
 	gap: 2rem;
@@ -84,11 +102,12 @@ nav{
 	top: 0;
 	background: #EA2ea9;
 	padding: 0.5rem;
+	z-index: 99;
 }
 
 h2{
 	position: sticky;
-	top: 2rem;
+	top: 0;
 	background: #EA2ea9;
 	padding: 0.5rem;
 }
